@@ -1,164 +1,337 @@
 {
-    "passages": [
-      {
-        "text": "You are standing at the end of a road before a small brick building. Around you is a forest.  A small stream flows out of the building and down a gully.\n\n[[Go North->Forest]]\n[[Go East->Building]]\n[[Go South->Valley]]\n[[Go West->Hill]]",
-        "links": [
-          {
-            "name": "Go North",
-            "link": "Forest",
-            "pid": "2"
-          },
-          {
-            "name": "Go East",
-            "link": "Building",
-            "pid": "3"
-          },
-          {
-            "name": "Go South",
-            "link": "Valley",
-            "pid": "4"
-          },
-          {
-            "name": "Go West",
-            "link": "Hill",
-            "pid": "5"
-          }
-        ],
-        "name": "Road",
-        "pid": "1",
-        "position": {
-          "x": "412",
-          "y": "189"
+  "passages": [
+    {
+      "text": "You and your four friends, Kylan, Nathan, Jaida, and Angeline, park your car on a small beach that's connected to a deserted lake. The waves look calm, and there is nothing in the lake except for one big raft made of wood. \n\n[[Exit the car->The Beach]]",
+      "links": [
+        {
+          "name": "Exit the car",
+          "link": "The Beach",
+          "pid": "2"
         }
-      },
-      {
-        "text": "You are in open forest, with a deep valley to one side.\n\n[[Go North->Forest]]\n[[Go East->Building]]\n[[Go South->Road]]\n[[Go West->Hill]]",
-        "links": [
-          {
-            "name": "Go North",
-            "link": "Forest",
-            "pid": "2"
-          },
-          {
-            "name": "Go East",
-            "link": "Building",
-            "pid": "3"
-          },
-          {
-            "name": "Go South",
-            "link": "Road",
-            "pid": "1"
-          },
-          {
-            "name": "Go West",
-            "link": "Hill",
-            "pid": "5"
-          }
-        ],
-        "name": "Forest",
-        "pid": "2",
-        "position": {
-          "x": "187",
-          "y": "339"
-        }
-      },
-      {
-        "text": "You are inside a building, a well house for a large spring.\n\n[[Go North->Forest]]\n[[Go East->Building]]\n[[Go South->Valley]]\n[[Go West->Road]]",
-        "links": [
-          {
-            "name": "Go North",
-            "link": "Forest",
-            "pid": "2"
-          },
-          {
-            "name": "Go East",
-            "link": "Building",
-            "pid": "3"
-          },
-          {
-            "name": "Go South",
-            "link": "Valley",
-            "pid": "4"
-          },
-          {
-            "name": "Go West",
-            "link": "Road",
-            "pid": "1"
-          }
-        ],
-        "name": "Building",
-        "pid": "3",
-        "position": {
-          "x": "337",
-          "y": "339"
-        }
-      },
-      {
-        "text": "You are in a valley in the forest beside a stream tumbling along a rocky bed.\n\n[[Go North->Road]]\n[[Go East->Building]]\n[[Go South->Valley]]\n[[Go West->Hill]]",
-        "links": [
-          {
-            "name": "Go North",
-            "link": "Road",
-            "pid": "1"
-          },
-          {
-            "name": "Go East",
-            "link": "Building",
-            "pid": "3"
-          },
-          {
-            "name": "Go South",
-            "link": "Valley",
-            "pid": "4"
-          },
-          {
-            "name": "Go West",
-            "link": "Hill",
-            "pid": "5"
-          }
-        ],
-        "name": "Valley",
-        "pid": "4",
-        "position": {
-          "x": "487",
-          "y": "339"
-        }
-      },
-      {
-        "text": "You have walked up a hill, still in the forest.  The road slopes back\ndown the other side of the hill.  There is a building in the distance.\n\n[[Go North->Forest]]\n[[Go East->Road]]\n[[Go South->Valley]]\n[[Go West->Hill]]",
-        "links": [
-          {
-            "name": "Go North",
-            "link": "Forest",
-            "pid": "2"
-          },
-          {
-            "name": "Go East",
-            "link": "Road",
-            "pid": "1"
-          },
-          {
-            "name": "Go South",
-            "link": "Valley",
-            "pid": "4"
-          },
-          {
-            "name": "Go West",
-            "link": "Hill",
-            "pid": "5"
-          }
-        ],
-        "name": "Hill",
-        "pid": "5",
-        "position": {
-          "x": "637",
-          "y": "339"
-        }
+      ],
+      "name": "The Car",
+      "pid": "1",
+      "position": {
+        "x": "406",
+        "y": "172"
       }
-    ],
-    "name": "Adventure",
-    "startnode": "1",
-    "creator": "Twine",
-    "creator-version": "2.3.7",
-    "ifid": "1A8FFB75-8072-4382-BCAF-ADFA65B09385"
-  }
+    },
+    {
+      "text": "You all get out of the car. Nathan is the first to take off his shirt, leaving his swimming trunks on, and the rest follow after. He then starts racing toward the water and everyone else runs after him. You want to go, but the raft is floating your way which is also catching your attention.\n\n[[Follow your friends->The Water]]\n[[Head toward the raft->The Raft]]",
+      "links": [
+        {
+          "name": "Follow your friends",
+          "link": "The Water",
+          "pid": "3"
+        },
+        {
+          "name": "Head toward the raft",
+          "link": "The Raft",
+          "pid": "4"
+        }
+      ],
+      "name": "The Beach",
+      "pid": "2",
+      "position": {
+        "x": "406",
+        "y": "322"
+      }
+    },
+    {
+      "text": "You're the last to jump in the water. You swim to the others, who have already started splashing each other, even though the water is too cold. Jaida's attention is directed your way once you get close enough and she starts shoving water at you.\n\n[[Splash back->Water Wars]]",
+      "links": [
+        {
+          "name": "Splash back",
+          "link": "Water Wars",
+          "pid": "5"
+        }
+      ],
+      "name": "The Water",
+      "pid": "3",
+      "position": {
+        "x": "331",
+        "y": "472"
+      }
+    },
+    {
+      "text": "You get into the water, immediately swimming to the raft. You get on the raft and start watching as your friends splash each other. All of a sudden, you see something dark out of the corner of your eye. You turn your head and see this mysterious black \"mist\" under water and heading your way.\n\n[[Investigate the \"mist\"->You Died]]\n[[Alert the others->The raft]]\n[[Ignore it->Everyone dies except you]]",
+      "links": [
+        {
+          "name": "Investigate the \"mist\"",
+          "link": "You Died",
+          "pid": "6"
+        },
+        {
+          "name": "Alert the others",
+          "link": "The raft",
+          "pid": "8"
+        },
+        {
+          "name": "Ignore it",
+          "link": "Everyone dies except you",
+          "pid": "9"
+        }
+      ],
+      "name": "The Raft",
+      "pid": "4",
+      "position": {
+        "x": "481",
+        "y": "472"
+      }
+    },
+    {
+      "text": "All five of you get into a splashing battle. All is fun until Kylan shouts, \"What is that?\" and the group gets quiet. You look over and see this mysterious black mist-like substance floating under water, gradually getting larger as it floats closer to you and your friends.\n\n[[Investigate the \"mist\"->You Died]]\n[[Let Kylan investigate->Kylan Died]]",
+      "links": [
+        {
+          "name": "Investigate the \"mist\"",
+          "link": "You Died",
+          "pid": "6"
+        },
+        {
+          "name": "Let Kylan investigate",
+          "link": "Kylan Died",
+          "pid": "7"
+        }
+      ],
+      "name": "Water Wars",
+      "pid": "5",
+      "position": {
+        "x": "256",
+        "y": "622"
+      }
+    },
+    {
+      "text": "As you got closer to the mist, you could feel it wrapping around your ankles, making you unable to move. It dragged you under and to the depths of the lake, your lungs filling with water.\n\nYOU DIED.\n\n[[Try Again?->The Car]]",
+      "links": [
+        {
+          "name": "Try Again?",
+          "link": "The Car",
+          "pid": "1"
+        }
+      ],
+      "name": "You Died",
+      "pid": "6",
+      "position": {
+        "x": "256",
+        "y": "772"
+      }
+    },
+    {
+      "text": "You and your friends watch as Kylan gets dragged underwater and disappears into the mist. The mist starts slowly making its way to you guys. You're the closest to the beach than the rest of the group which is on your right, but the raft is to your left.\n\n[[Swim left->you died]]\n[[Swim right->You Escaped]]",
+      "links": [
+        {
+          "name": "Swim left",
+          "link": "you died",
+          "pid": "12"
+        },
+        {
+          "name": "Swim right",
+          "link": "You Escaped",
+          "pid": "13"
+        }
+      ],
+      "name": "Kylan Died",
+      "pid": "7",
+      "position": {
+        "x": "376",
+        "y": "772"
+      }
+    },
+    {
+      "text": "You shout out to your friends that there is something in the mist and they start to notice as well. Everyone else makes their way on the raft. Then you hear Jaida scream.\nIt seems as the mist has captured her feet and is pulling her under. She's holding on to the raft but she looks like she's slipping.\n\n[[Reach out to save Jaida->You and Jaida Die]]\n[[Do nothing->Nathan and Jaida Die]]",
+      "links": [
+        {
+          "name": "Reach out to save Jaida",
+          "link": "You and Jaida Die",
+          "pid": "10"
+        },
+        {
+          "name": "Do nothing",
+          "link": "Nathan and Jaida Die",
+          "pid": "11"
+        }
+      ],
+      "name": "The raft",
+      "pid": "8",
+      "position": {
+        "x": "526",
+        "y": "622"
+      }
+    },
+    {
+      "text": "You sit back in shock as the under water mist takes a hold of your friends one by one, none of them able to make it to dry land or to the raft your watching, until your the last one left. You don't know what to do.\n\n[[Try and swim to the lake->You died]]\n[[Wait->Waiting]]",
+      "links": [
+        {
+          "name": "Try and swim to the lake",
+          "link": "You died",
+          "pid": "14"
+        },
+        {
+          "name": "Wait",
+          "link": "Waiting",
+          "pid": "15"
+        }
+      ],
+      "name": "Everyone dies except you",
+      "pid": "9",
+      "position": {
+        "x": "646",
+        "y": "622"
+      }
+    },
+    {
+      "text": "The mist is too strong. It starts the pull Jaida under and you slip off the raft as well, falling under with her.\n\nYOU DIED\n\n[[Try Again?->The Car]]",
+      "links": [
+        {
+          "name": "Try Again?",
+          "link": "The Car",
+          "pid": "1"
+        }
+      ],
+      "name": "You and Jaida Die",
+      "pid": "10",
+      "position": {
+        "x": "496",
+        "y": "772"
+      }
+    },
+    {
+      "text": "Nathan goes in to save Jaida, but the mist is too strong and drags both of them under.\n\n[[Continue->Emergency]]",
+      "links": [
+        {
+          "name": "Continue",
+          "link": "Emergency",
+          "pid": "17"
+        }
+      ],
+      "name": "Nathan and Jaida Die",
+      "pid": "11",
+      "position": {
+        "x": "601",
+        "y": "772"
+      }
+    },
+    {
+      "text": "You swim as fast as you can toward the raft, but there's no use. The mist catches up and sends you under.\n\nYOU DIED\n\n[[Try Again?->The Car]]",
+      "links": [
+        {
+          "name": "Try Again?",
+          "link": "The Car",
+          "pid": "1"
+        }
+      ],
+      "name": "you died",
+      "pid": "12",
+      "position": {
+        "x": "301",
+        "y": "922"
+      }
+    },
+    {
+      "text": "You can feel the sand under your feet as you race out of the water and start running to the car. You look behind you and see that no one else is above water, so you assume the mist got to them. You get in the car and start it up, driving away and leaving your friends behind.\n\nYOU SURVIVED\n\n[[Try Again?->The Car]]",
+      "links": [
+        {
+          "name": "Try Again?",
+          "link": "The Car",
+          "pid": "1"
+        }
+      ],
+      "name": "You Escaped",
+      "pid": "13",
+      "position": {
+        "x": "421",
+        "y": "922"
+      }
+    },
+    {
+      "text": "You dive into the water, but know that you've immediately messed up. The black mist is right there to greet you and you don't come back up.\n\nYOU DIED\n\n[[Try Again?->The Car]]",
+      "links": [
+        {
+          "name": "Try Again?",
+          "link": "The Car",
+          "pid": "1"
+        }
+      ],
+      "name": "You died",
+      "pid": "14",
+      "position": {
+        "x": "721",
+        "y": "772"
+      }
+    },
+    {
+      "text": "Half a day has passed, and you're still sitting on the raft. You seem to have floated even more into the lake and now land is getting even farther. There's no way to contact anyone as well since you left your phone in the car. You're getting very hungry and dehydrated, but don't know if it's worth the risk. What do you do?\n\n[[Try and swim to safety->You died]] \n[[Keep waiting->You Die of Thirst]]",
+      "links": [
+        {
+          "name": "Try and swim to safety",
+          "link": "You died",
+          "pid": "14"
+        },
+        {
+          "name": "Keep waiting",
+          "link": "You Die of Thirst",
+          "pid": "16"
+        }
+      ],
+      "name": "Waiting",
+      "pid": "15",
+      "position": {
+        "x": "841",
+        "y": "772"
+      }
+    },
+    {
+      "text": "Waiting made it worse. You could feel yourself getting severely dehydrated as ever, but not once did you dirnk the lake water.\n\nYOU DIED\n\n[[Try Again?->The Car]]",
+      "links": [
+        {
+          "name": "Try Again?",
+          "link": "The Car",
+          "pid": "1"
+        }
+      ],
+      "name": "You Die of Thirst",
+      "pid": "16",
+      "position": {
+        "x": "841",
+        "y": "922"
+      }
+    },
+    {
+      "text": "You, Kylan, and Angeline are still on the boat. Suddenly, Angeline gasps and pulls her phone out from inside a swimsuit pocket. You are relieved as she sends an SOS signal from your location.\n\n[[Continue->Safety]]",
+      "links": [
+        {
+          "name": "Continue",
+          "link": "Safety",
+          "pid": "18"
+        }
+      ],
+      "name": "Emergency",
+      "pid": "17",
+      "position": {
+        "x": "601",
+        "y": "922"
+      }
+    },
+    {
+      "text": "The helicopter arrives and drops down a ladder for you three to climb up and you go home to safety, leaving your two friends and the back mist behind.\n\nYOU SURVIVED\n\n[[Try Again?->The Car]]",
+      "links": [
+        {
+          "name": "Try Again?",
+          "link": "The Car",
+          "pid": "1"
+        }
+      ],
+      "name": "Safety",
+      "pid": "18",
+      "position": {
+        "x": "601",
+        "y": "1072"
+      }
+    }
+  ],
+  "name": "The Raft",
+  "startnode": "1",
+  "creator": "Twine",
+  "creator-version": "2.3.9",
+  "ifid": "F0CAF462-A357-4750-85E0-F33339F0C945"
+}
